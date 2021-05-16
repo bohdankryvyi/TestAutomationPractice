@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="util.TestListener" />
+    </listeners>
+
+    <test verbose="2" preserve-order="true"
+          name="D:/Java projects/TestAutomationPractice/src/test/java/tests/MyStoreTests.java">
+        <classes>
+            <class name="tests.MyStoreTests">
+                <methods>
+                    <include name="pageIsOpened"/>
+                    <include name="productIsOpened"/>
+                    <include name="addAnyItem"/>
+                    <include name="deleteItemFromCart"/>
+                    <include name="searchItem"/>
+                    <include name="subscribeOnNewsletters"/>
+                    <include name="invalidSubscribeOnNewsletters"/>
+                    <include name="checkSignInForm"/>
+                    <include name="successfulLogin"/>
+                    <include name="unsuccessfulLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

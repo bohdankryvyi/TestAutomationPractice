@@ -1,0 +1,30 @@
+pages/StorePage.java
+ pages.StorePage
+util/WaiterWrapperClass.java
+ util.WaiterWrapperClass
+tests/MyStoreTests.java
+ tests.MyStoreTests
+tests/BaseAbstractTest.java
+ tests.BaseAbstractTest
+pages/ProductPage.java
+ pages.ProductPage
+util/GenerateRandomMail.java
+ util.GenerateRandomMail
+util/ForTheTextSearching.java
+ util.ForTheTextSearching
+util/TestListener.java
+ util.TestListener
+pages/SignInPage.java
+ pages.SignInPage
+pages/CartPage.java
+ pages.CartPage
+model/User.java
+ model.User
+util/DataProviderClass.java
+ util.DataProviderClass
+pages/BaseAbstractPage.java
+ pages.BaseAbstractPage
+driver/DriverSingleton.java
+ driver.DriverSingleton
+util/ConfProperties.java
+ util.ConfProperties
