@@ -1,11 +1,11 @@
-pages/StorePage.java
- pages.StorePage
+pages/BaseAbstractPage.java
+ pages.BaseAbstractPage
 util/WaiterWrapperClass.java
  util.WaiterWrapperClass
-tests/MyStoreTests.java
- tests.MyStoreTests
-tests/BaseAbstractTest.java
- tests.BaseAbstractTest
+util/ConfProperties.java
+ util.ConfProperties
+driver/DriverSingleton.java
+ driver.DriverSingleton
 pages/ProductPage.java
  pages.ProductPage
 util/GenerateRandomMail.java
@@ -14,17 +14,21 @@ util/ForTheTextSearching.java
  util.ForTheTextSearching
 util/TestListener.java
  util.TestListener
-pages/SignInPage.java
- pages.SignInPage
+util/DataProviderClass.java
+ util.DataProviderClass
 pages/CartPage.java
  pages.CartPage
 model/User.java
  model.User
-util/DataProviderClass.java
- util.DataProviderClass
-pages/BaseAbstractPage.java
- pages.BaseAbstractPage
-driver/DriverSingleton.java
- driver.DriverSingleton
-util/ConfProperties.java
- util.ConfProperties
+pages/SignInPage.java
+ pages.SignInPage
+pages/StorePage.java
+ pages.StorePage
+tests/MyStoreTests.java
+ tests.MyStoreTests
+tests/BaseAbstractTest.java
+ tests.BaseAbstractTest
+model/UserBuilder.java
+ model.UserBuilder
+model/UserFactory.java
+ model.UserFactory

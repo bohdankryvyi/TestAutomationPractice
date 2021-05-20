@@ -24,7 +24,7 @@ public class StorePage extends BaseAbstractPage {
 
     @FindBy(xpath ="//div[@class=\"product-container\"]//a[@class=\"product-name\"]")
     private List<WebElement> openedItemList; // return list of opened elements
-    private WebElement firstItem = openedItemList.get(0); // get first element from the list
+    //private WebElement firstItem = openedItemList.get(0); // get first element from the list
 
     @FindBy(xpath = "//h1[@itemprop='name']")
     private WebElement firstItemName;
@@ -53,6 +53,7 @@ public class StorePage extends BaseAbstractPage {
     }
 
     public ProductPage openFirstItem(){
+        WebElement firstItem = openedItemList.get(0);
         firstItem.click();
         return new ProductPage();
     }

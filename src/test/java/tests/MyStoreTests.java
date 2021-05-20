@@ -1,6 +1,7 @@
 package tests;
 
 import model.User;
+import model.UserBuilder;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.CartPage;
@@ -102,15 +103,21 @@ public class MyStoreTests extends BaseAbstractTest {
 
     @Test(dataProvider = "valid login test data", dataProviderClass = DataProviderClass.class)
     public void successfulLogin(String login, String password, String username){
-        User testUser = new User(login, password);
+        User testUser = new UserBuilder()
+                .withLogin(login)
+                .withPassword(password)
+                .build();
         storePage.openPage().openSignInPage().login(testUser);
-        String logedInUserName= storePage.openPage().getAccountName();
-        Assert.assertEquals(logedInUserName, username);
+        String loggedInUserName= storePage.openPage().getAccountName();
+        Assert.assertEquals(loggedInUserName, username);
     }
 
     @Test(dataProvider = "invalid login test data", dataProviderClass = DataProviderClass.class)
     public void unsuccessfulLogin(String login, String password){
-        User testUser = new User(login,password);
+        User testUser = new UserBuilder()
+                .withLogin(login)
+                .withPassword(password)
+                .build();
 
         String message = storePage.openPage().openSignInPage().invalidLogin(testUser);
         Assert.assertEquals(message, "There is 1 error");

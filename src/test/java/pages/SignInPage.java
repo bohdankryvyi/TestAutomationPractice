@@ -2,6 +2,7 @@ package pages;
 
 import driver.DriverSingleton;
 import model.User;
+import model.UserBuilder;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -49,14 +50,14 @@ public class SignInPage extends BaseAbstractPage{
     }
 
     public void login(User user){
-        registeredEmailField.sendKeys(user.getUsername());
+        registeredEmailField.sendKeys(user.getLogin());
         passwordField.sendKeys(user.getPassword());
         signInButton.click();
 
     }
 
     public String invalidLogin(User user){
-        registeredEmailField.sendKeys(user.getUsername());
+        registeredEmailField.sendKeys(user.getLogin());
         passwordField.sendKeys(user.getPassword());
         signInButton.click();
         return alertAboutInvalidLogin.getText();
