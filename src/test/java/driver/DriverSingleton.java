@@ -11,7 +11,6 @@ public class DriverSingleton {
 
     private DriverSingleton() {
     }
-
     public static WebDriver getDriver() {
         if (null == driver) {
             // user ConfProperties util class to read browser property

@@ -1,0 +1,19 @@
+Configuration:
+  name: Default
+  Properties:
+    Property:
+      name: log-path
+      value: logs
+
+  Appenders:
+    File:
+      name: LogToFile
+      fileName: ${log-path}/logfile.log
+      PatternLayout:
+        Pattern: "%d [%t] %-5p %c - %m%n"
+  Loggers:
+    Root:
+      level: all
+      AppenderRef:
+        - ref: LogToFile
+          level: trace

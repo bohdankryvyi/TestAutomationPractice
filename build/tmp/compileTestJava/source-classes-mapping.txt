@@ -1,27 +1,3 @@
-pages/BaseAbstractPage.java
- pages.BaseAbstractPage
-util/WaiterWrapperClass.java
- util.WaiterWrapperClass
-util/ConfProperties.java
- util.ConfProperties
-driver/DriverSingleton.java
- driver.DriverSingleton
-pages/ProductPage.java
- pages.ProductPage
-util/GenerateRandomMail.java
- util.GenerateRandomMail
-util/ForTheTextSearching.java
- util.ForTheTextSearching
-util/TestListener.java
- util.TestListener
-util/DataProviderClass.java
- util.DataProviderClass
-pages/CartPage.java
- pages.CartPage
-model/User.java
- model.User
-pages/SignInPage.java
- pages.SignInPage
 pages/StorePage.java
  pages.StorePage
 tests/MyStoreTests.java
@@ -30,5 +6,31 @@ tests/BaseAbstractTest.java
  tests.BaseAbstractTest
 model/UserBuilder.java
  model.UserBuilder
+driver/DriverSingleton.java
+ driver.DriverSingleton
+pages/ProductPage.java
+ pages.ProductPage
+util/EventHandler.java
+ util.EventHandler
+util/GenerateRandomMail.java
+ util.GenerateRandomMail
+util/ForTheTextSearching.java
+ util.ForTheTextSearching
+util/TestListener.java
+ util.TestListener
+pages/SignInPage.java
+ pages.SignInPage
+pages/CartPage.java
+ pages.CartPage
+model/User.java
+ model.User
+util/DataProviderClass.java
+ util.DataProviderClass
+pages/BaseAbstractPage.java
+ pages.BaseAbstractPage
+util/ConfProperties.java
+ util.ConfProperties
+util/WaiterWrapperClass.java
+ util.WaiterWrapperClass
 model/UserFactory.java
  model.UserFactory
