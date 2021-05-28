@@ -88,7 +88,7 @@ public class MyStoreTests extends BaseAbstractTest {
     /**
      * Test for checking searching
      */
-    @Test(dataProvider = "search data", dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider = "searching", dataProviderClass = DataProviderClass.class)
     public void searchItem(String data) {
         logger.info("Search is performed via provided data");
         //check whether all founded elements titles contains the word that we are searched by
