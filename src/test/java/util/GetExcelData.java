@@ -17,6 +17,10 @@ import tests.MyStoreTests;
 
 import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 
+/**
+ * GetExcelData class is implemented to get data for DataProvider class
+ * return data
+ */
 public class GetExcelData {
     private static final Logger log = LogManager.getLogger(GetExcelData.class);
 

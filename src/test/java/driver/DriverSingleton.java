@@ -4,10 +4,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import util.ConfProperties;
+import util.EventHandler;
 
 public class DriverSingleton {
     public static WebDriver driver;
+
 
     private DriverSingleton() {
     }
@@ -26,7 +29,9 @@ public class DriverSingleton {
             }
             driver.manage().window().maximize();
         }
-        return driver;
+        EventFiringWebDriver eventDriver = new EventFiringWebDriver(driver);
+        EventHandler handler = new EventHandler();
+        return  eventDriver.register(handler);
     }
 
     public static void closeDriver() {

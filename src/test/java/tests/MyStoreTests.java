@@ -18,6 +18,7 @@ import pages.SignInPage;
 import pages.StorePage;
 import util.DataProviderClass;
 import util.EventHandler;
+import util.RetryAnalyzer;
 
 public class MyStoreTests extends BaseAbstractTest {
     private static final Logger logger = LogManager.getLogger(MyStoreTests.class);
@@ -30,11 +31,11 @@ public class MyStoreTests extends BaseAbstractTest {
     /**
      * test to check whether web page can be opened
      */
-    @Test
+    @Test(retryAnalyzer = RetryAnalyzer.class)
     public void pageIsOpened() {
         storePage.openPage();
         logger.info("Store page is opened");
-        Assert.assertEquals("My Store", driver.getTitle());
+        Assert.assertEquals("My Storeee", driver.getTitle());
     }
 
     @Test(testName = "", description = "Test to check whether item from main page can be opened")
