@@ -8,10 +8,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.annotations.*;
 import util.EventHandler;
+import util.RetryAnnotationTransformer;
 import util.TestListener;
 
 // to connect listeners via base test class:
-@Listeners({TestListener.class})
+@Listeners({TestListener.class, RetryAnnotationTransformer.class})
 @Epic("Test Automation Practice Epic")
 public class BaseAbstractTest {
     public WebDriver driver;

@@ -24,8 +24,8 @@ public class WaiterWrapperClass {
 
     /**
      * Method that waits for an web element till it will be available
-     * @param driver
-     * @param webElement
+     * @param driver -
+     * @param webElement -
      * @return new web element till it will be available
      */
     public static WebElement waitForElement (WebDriver driver, WebElement webElement){

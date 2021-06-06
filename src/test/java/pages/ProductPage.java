@@ -2,6 +2,7 @@ package pages;
 
 import driver.DriverSingleton;
 import io.qameta.allure.Step;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -9,8 +10,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import util.WaiterWrapperClass;
 
+@Slf4j
 public class ProductPage extends BaseAbstractPage{
-    private Logger log = LogManager.getRootLogger();
+   // private Logger log = LogManager.getRootLogger();
     /**
      * constructor for  fields initialization
      */

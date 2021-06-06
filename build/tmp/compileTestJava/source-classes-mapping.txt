@@ -1,43 +1,43 @@
-util/RetryAnnotationTransformer.java
- util.RetryAnnotationTransformer
-model/UserFactory.java
- model.UserFactory
 util/DataProviderClass.java
  util.DataProviderClass
-model/UserBuilder.java
- model.UserBuilder
-util/ConfProperties.java
- util.ConfProperties
-driver/DriverSingleton.java
- driver.DriverSingleton
 util/WaiterWrapperClass.java
  util.WaiterWrapperClass
+tests/BaseAbstractTest.java
+ tests.BaseAbstractTest
+pages/BaseAbstractPage.java
+ pages.BaseAbstractPage
+util/GetExcelData.java
+ util.GetExcelData
+ util.GetExcelData$1
+util/RetryAnalyzer.java
+ util.RetryAnalyzer
+driver/DriverSingleton.java
+ driver.DriverSingleton
+pages/ProductPage.java
+ pages.ProductPage
+util/RetryAnnotationTransformer.java
+ util.RetryAnnotationTransformer
 util/EventHandler.java
  util.EventHandler
 util/GenerateRandomMail.java
  util.GenerateRandomMail
 util/ForTheTextSearching.java
  util.ForTheTextSearching
-model/User.java
- model.User
-util/RetryAnalyzer.java
- util.RetryAnalyzer
-util/GetExcelData.java
- util.GetExcelData
- util.GetExcelData$1
 util/TestListener.java
  util.TestListener
-tests/BaseAbstractTest.java
- tests.BaseAbstractTest
+util/ConfProperties.java
+ util.ConfProperties
+pages/CartPage.java
+ pages.CartPage
 pages/StorePage.java
  pages.StorePage
 tests/MyStoreTests.java
  tests.MyStoreTests
 pages/SignInPage.java
  pages.SignInPage
-pages/CartPage.java
- pages.CartPage
-pages/ProductPage.java
- pages.ProductPage
-pages/BaseAbstractPage.java
- pages.BaseAbstractPage
+model/UserBuilder.java
+ model.UserBuilder
+model/User.java
+ model.User
+model/UserFactory.java
+ model.UserFactory

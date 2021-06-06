@@ -35,7 +35,7 @@ public class MyStoreTests extends BaseAbstractTest {
     public void pageIsOpened() {
         storePage.openPage();
         logger.info("Store page is opened");
-        Assert.assertEquals("My Storeee", driver.getTitle());
+        Assert.assertEquals("My Store", driver.getTitle());
     }
 
     @Test(testName = "", description = "Test to check whether item from main page can be opened")
